@@ -1,4 +1,4 @@
-A website that show cases covid19 in Indonesia.
+A website that displays the total number of COVID-19 cases in Indonesia.
 
 Use React, Vitejs, Axios
 
