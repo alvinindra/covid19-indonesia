@@ -8,12 +8,14 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],  
+      includeAssets: ['/src/favicon.ico', 'robots.txt', '/images/apple-touch-icon.png'],  
       manifest: {
         name: 'Covid19 Tracker - Indonesia',
         short_name: 'Covid19 - Indonesia',
         description: 'A website that show cases covid 19 in Indonesia',
         theme_color: '#8068F4',
+        start_url: '/',
+        display: 'standalone',
         icons: [
           {
             src: '/images/icon-pwa-192x192.png',
@@ -24,12 +26,6 @@ export default defineConfig({
             src: '/images/icon-pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-          },
-          {
-            src: '/images/icon-pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
           }
         ]
       }
